@@ -7,8 +7,27 @@ Un bot de música para Discord desarrollado en Python.
 - Python 3.8 o superior
 - FFmpeg instalado en el sistema
 - Token de Discord Bot
+- Intents privilegiados habilitados en el Portal de Desarrolladores de Discord
 
-## Configuración
+## Configuración del Bot en Discord
+
+1. Ve al [Portal de Desarrolladores de Discord](https://discord.com/developers/applications)
+2. Crea una nueva aplicación y configura el bot
+3. En la sección "Bot", habilita los siguientes Privileged Gateway Intents:
+   - Presence Intent
+   - Server Members Intent
+   - Message Content Intent
+4. En la sección "OAuth2", genera una URL de invitación con los siguientes permisos:
+   - Scopes: `bot`, `applications.commands`
+   - Permisos de Bot:
+     - View Channels
+     - Send Messages
+     - Connect
+     - Speak
+     - Use Voice Activity
+5. Usa la URL generada para invitar el bot a tu servidor
+
+## Configuración del Proyecto
 
 1. Instala las dependencias:
 ```bash
