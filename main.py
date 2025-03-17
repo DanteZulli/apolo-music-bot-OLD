@@ -13,7 +13,9 @@ intents = discord.Intents.default()
 intents.message_content = True
 intents.voice_states = True
 
-bot = commands.Bot(command_prefix='!', intents=intents)
+# Get command prefix from environment variables, default to '!' if not set
+COMMAND_PREFIX = os.getenv('COMMAND_PREFIX', '!')
+bot = commands.Bot(command_prefix=COMMAND_PREFIX, intents=intents)
 
 class Music(commands.Cog):
     def __init__(self, bot):
