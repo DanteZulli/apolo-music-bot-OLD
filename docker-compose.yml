@@ -1,0 +1,8 @@
+services:
+  bot:
+    build: .
+    container_name: apolo-music-bot
+    environment:
+      - DISCORD_TOKEN=${DISCORD_TOKEN}
+      - COMMAND_PREFIX=${COMMAND_PREFIX:-!}
+    restart: unless-stopped

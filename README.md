@@ -44,6 +44,43 @@ DISCORD_TOKEN=tu_token_aqui
 python main.py
 ```
 
+## Ejecución con Docker
+
+### Usando Docker Compose (Recomendado)
+
+1. Asegúrate de tener Docker y Docker Compose instalados
+2. Crea un archivo `.env` con tu token de Discord:
+```
+DISCORD_TOKEN=tu_token_aqui
+COMMAND_PREFIX=!
+```
+3. Ejecuta el bot con Docker Compose:
+```bash
+docker-compose up -d
+```
+
+### Usando Docker directamente
+
+1. Construye la imagen:
+```bash
+docker build -t apolo-music-bot .
+```
+
+2. Ejecuta el contenedor:
+```bash
+docker run -d \
+  --name apolo-music-bot \
+  -e DISCORD_TOKEN=tu_token_aqui \
+  -e COMMAND_PREFIX=! \
+  apolo-music-bot
+```
+
+### Comandos Docker útiles
+
+- Ver logs del bot: `docker logs apolo-music-bot`
+- Detener el bot: `docker stop apolo-music-bot`
+- Reiniciar el bot: `docker restart apolo-music-bot`
+
 ## Comandos
 
 - `!join`: Conecta el bot al canal de voz
