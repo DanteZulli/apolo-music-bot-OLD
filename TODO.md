@@ -10,6 +10,7 @@
 - [ ] Better queue management
 - [ ] Performance optimizations
 - [ ] More detailed logging system
+- [ ] Testing and Github Packaging
 
 ## Bug Fixes
 - [ ] Fix potential audio stuttering when queuing multiple songs
