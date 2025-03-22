@@ -113,6 +113,10 @@ docker run -d \
 - `!queue`: Displays the current song queue.
 - `!help`: Displays a list of available commands and their usage.
 
+## Roadmap
+
+For a detailed list of planned features and improvements, please see our [TODO.md](TODO.md) file.
+
 ## Acknowledgments
 
 * [discord.py](https://discordpy.readthedocs.io/en/stable/) - The Python library for Discord API
