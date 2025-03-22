@@ -40,12 +40,6 @@ jobs:
     - name: Check if code compiles
       run: |
         python -c "import src" || echo "Failed to import src package"
-    
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
-      with:
-        file: ./coverage.xml
-        fail_ci_if_error: false
   
   docker-test:
     runs-on: ubuntu-latest
