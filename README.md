@@ -46,7 +46,7 @@
    - Message Content Intent
 4. In the "OAuth2" section, generate an invite URL with the following permissions:
    - **Scopes**: `bot`, `applications.commands`
-   - **Permisos de Bot**:
+   - **Bot Permissions**:
      - View Channels
      - Send Messages
      - Connect
