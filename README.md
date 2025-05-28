@@ -35,6 +35,10 @@
 - Discord Bot Token
 - Privileged Intents enabled in the Discord Developer Portal
 
+> [!CAUTION]
+> Copy & Paste Discord **Bot** Token from _"Bot > Token"_. \
+> Not from _"OAuth > Client Secret"_
+
 ## Bot Setup on Discord Developer Portal
 
 1. Go to the [Discord Developer Portal](https://discord.com/developers/applications)
@@ -73,7 +77,7 @@ python main.py
 
 ## Running with Docker
 
-### Using Docker Compose (Recommended)
+### Using Docker Compose
 
 1. Ensure Docker and Docker Compose are installed.
 2. Create a `.env` file in the root of the project to store your environment variables. Add your Discord bot token as follows:
@@ -83,22 +87,6 @@ DISCORD_TOKEN=your_discord_token_here
 3. Run the bot with Docker Compose::
 ```bash
 docker-compose up -d
-```
-
-### Using Docker Directly
-
-1. Build the Docker image:
-```bash
-docker build -t apolo-music-bot .
-```
-
-2. Run the container:
-```bash
-docker run -d \
-  --name apolo-music-bot \
-  -e DISCORD_TOKEN=your_token_here \
-  -e COMMAND_PREFIX=! \
-  apolo-music-bot
 ```
 
 ## Usage
