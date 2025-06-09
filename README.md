@@ -1,3 +1,20 @@
+> [!CAUTION]
+> ⚠️ **Archived Repository**
+
+This repository is archived because the bot was originally built using **Python**, a language I don’t work with — and while I might eventually learn it, this is just a hobby project, so I don’t really have the extra time to dive into a new language just for this.
+
+I wasn’t sure how to continue improving or maintaining this project due to my lack of knowledge in Python. That’s why I decided to **rewrite the bot entirely in Java**, which is my main programming language and where I can properly evolve the project going forward.
+
+If you're interested in the new version, fully built with **JDA (Java Discord API)** and actively maintained, you can check it out here:
+
+👉 **[New repository written in Java with JDA](https://github.com/DanteZulli/apolo-music-bot)**
+
+Thanks for stopping by! 👋
+
+---
+
+
+
 <!-- PROJECT SHIELDS -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
